@@ -13,9 +13,14 @@ for (i <- 0 until arr81.length if !indToDel.contains(i)) yield arr81(i)
 
 
 
-val id = "America/"
-java.util.TimeZone.getAvailableIDs.filter(_.startsWith(id))
-java.util.TimeZone.getAvailableIDs.filter(_.startsWith(id)).map(_.stripPrefix(id)).sorted
+//val id = "America/"
+//java.util.TimeZone.getAvailableIDs.filter(_.startsWith(id))
+
+//java.util.TimeZone.getAvailableIDs.filter(_.startsWith(id)).map(_.stripPrefix(id)).sorted
+
+
+
+
 
 
 /**
@@ -30,3 +35,10 @@ to find uses of java.util.List in the standard Java library.)
 val flavors = java.awt.datatransfer.SystemFlavorMap.getDefaultFlavorMap().asInstanceOf[SystemFlavorMap]
 
 val buff = flavors.getNativesForFlavor(DataFlavor.imageFlavor)
+
+
+
+
+
+val Products = scala.io.Source.fromInputStream(getClass.getResourceAsStream("myFile.txt")).getLines().toArray
+Products
