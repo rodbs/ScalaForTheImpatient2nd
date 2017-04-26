@@ -1,0 +1,3 @@
+SalesMan    Q1  Q2  Q3  Q4
+Bob         23  25  53  26
+Peter       34  42  23  53
